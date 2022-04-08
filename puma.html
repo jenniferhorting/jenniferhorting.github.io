@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="En startsida">
+	<meta name="author" content="Jennifer">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Proxima Nova' rel='stylesheet'>
+	<script src="script.js"></script>
+	<link rel="icon" href="images/favicon.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<title>Startsida</title>
+</head>
+
+<body>
+
+    <nav class="menu">
+		<div class="name" style="cursor: pointer;" onclick="Redirect('index');">
+			<p>Jennifer Hörting</p>
+		</div>
+		<div clasS="icons">
+			<a href="mailto:jenniferlillemor@gmail.com" target="_blank">
+				<i class="fa fa-envelope" style="font-size: 24px;"></i>
+			</a>
+			<a href="https://www.linkedin.com/in/jenniferhrting/" target="_blank">
+				<i class="fa fa-linkedin-square" style="font-size: 24px;"></i>
+			</a>
+		</div>
+	</nav>
+
+    <!-- <div class="back" onclick="Redirect('index');">
+        <span class="material-icons md-60">arrow_back</span>
+    </div> -->
+    
+    <div class="project">
+
+        <div class="project__image">
+            <img class="project__img" src="images/Project-PUMA.png"/>
+        </div>
+
+        <h1>Drink generator</h1>
+        <h3>Generate the ultimate beverage to buy at your Systembolag</h3>
+        <p>Within a course at Umeå University, I developed a mobile app together with three other students. The idea was to create a new and fun way to discover beverages at Systembolaget, the monopoly distributor of alcoholic beverages in Sweden. Based on a couple of parameters, such as occasion, the mood of the user, and which beverages are in stock at Systembolaget, the app generated a beverage and suggested it to the user. An important part of the app was to use the API from Systembolaget.</p>
+        <p>During this project, we created three different levels of prototypes, from simple low-fidelity prototypes to a functional mobile app in React Native. We used an agile project model with sprints of one week each. On the last day of a sprint, we decided on the tasks to be done in the upcoming sprint.</p>
+        
+        <h2>Setting the requirements</h2>
+        <p>We started by writing down all requirements for the project, both how we were going to work and the requirements for the final prototype. Our ambition was to continue with the app after the end of the course but since we had a time frame to deal with, we needed to specify what needed to be done within the course. Therefore, we did a prioritization for all requirements, making it clear what we need to get done to deliver an MVP at the end of the course and what we will do only if time allows.</p>
+
+        <h2>Conducting a pilot study</h2>
+        <p>Before getting started creating prototypes, we did a pilot study that included:</p>
+
+        <ul>
+            <li>SWOT analysis to find strengths, weaknesses, possibilities, and treats.</li>
+            <li>Stakeholder analysis to map stakeholders and identify their needs.</li>
+            <li>WBS to map the scope of the project.</li>
+            <li>Visualization of the milestones in the project.</li>
+            <li>Time plan to get an overview of all activities in the project and when they should occur. </li>
+        </ul>
+
+        <p>To handle the threats and weaknesses identified in the SWOT analysis, we examined the positive impact of the opportunities and strengths that we also had identified. One treat that was going to have an impact on the project was the treat that Systembolaget would shut down their API or if it could not be reached for any other reason. Our strategy to handle this was to save the latest fetched data in a database.</p>
+
+        <h2>Individual Lo-Fi prototypes</h2>
+        <p>To be able to quickly demonstrate and test the idea that we had come up with, we created individual lo-fi prototypes. The focus of these prototypes was to show the functionality and layout. The idea was to create the prototype with pen and paper, but since I needed to do my user tests remotely, I chose to use Figma which is a prototyping tool.</p>
+    
+        <h2>Testing the Lo-Fi prototype</h2>
+        <p>To test my lo-fi prototype, I conducted five user tests with people from the target group that we had decided on. The test that I conducted was a ‘key task/get it’ test. In a ‘key task’ test, the test leader asks the test person to do a task and observes how well they perform the task. In a ‘get it’ test, the test leader shows the test person, e.g., a web page, and sees if the test person understands the purpose of the page and how it works. The test I used was thus a combination of these two methods.</p>
+        <p>Before the test, I explained their rights and the purpose of the test, and how the test will proceed. After that, I started with some questions to get an idea of who the test person is and their habits with mobile apps. After the questions had been answered, they got access to the prototype and were instructed to use the think-aloud method, meaning that they share out loud what they think when exploring the prototype. The test person was informed that they will get three tasks to perform and that the tasks will be given to them when the previous task is completed. </p>
+        <p>After the test, I had some final questions to answer if they had understood the purpose of the app, if they thought something was unclear, and so forth.</p>
+    
+        <h2>Creating the Mid-Fi prototype together</h2>
+        <p>With the insights from all our user tests, we combined all lo-fi prototypes into one mid-fi prototype. This prototype was also made in Figma but at a higher level than our earlier prototypes. This was a clickable prototype for which we also created a graphic profile including a logotype, complementary image, colors, and shapes of elements.</p>
+
+        <h2>Testing the Mid-Fi prototype</h2>
+        <p>Like the earlier tests of the lo-fi prototype, the test person was given three tasks together with a scenario. In addition to examining if users encounter problems when using the app, if they understand the purpose and so on, we also examined how the test persons experience the app’s graphic design.</p>
+        <p>When we had conducted all user tests, we compiled and analyzed the test results and the answers from the following interviews. We brought with us the most important insights into the development of the final hi-fi prototype.</p>
+
+        <h2>Developing the final Hi-Fi prototype</h2>
+        <p>Based on the insights from testing the mid-fi prototype, we created the hi-fi prototype which was a functional mobile app. The goal was to make it as close to a finished product as possible. We started by splitting our group of four into two, working parallel with the frontend and the backend. Together with another project member, I started with the backend and later joined the frontend team when we were finished with the necessary parts for the backend.</p>
+        <p>For the frontend, we used React Native. For the backend, we primarily used Node, Axios, and Express. To store all our data, we set up a database in MongoDB which uses Mongoose for communication. Backend acted as a client against the API from Systembolaget to collect information for the database. It also worked as a server with a REST API against the frontend. Frontend was created via Expo CLI and was responsible for presenting the application visually to both Android and iOS.</p>
+   
+        <h2>An unexpected turn</h2>
+        <p>Unfortunately, we received an email during the project saying that the API from Systembolaget will be closed for access just in about a month. Even if we had identified this as a treat in our SWOT, this was not something that we had expected. However, we solved the issue as we had decided to do earlier. We made sure to save the latest fetched data in the database to make sure that the app still works even if there is no new data to fetch.</p>
+   
+        <h2>What happened?</h2>
+        <p>When going into the project, we were very eager to continue with the app after the end of the course and try to publish it on App Store and Google Play. Since it was no longer possible for us to provide the app with updated information, we were no longer motivated to continue working with the app after the course. Despite this, I think this project has been super fun to work with and I also learned a lot.</p>
+
+    </div>
+
+    <footer>
+        <p>Copyright © 2022 Jennifer Hörting. All Rights Reserved.</p>
+    </footer>    
+</body>

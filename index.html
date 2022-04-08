@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="En startsida">
+	<meta name="author" content="Jennifer">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<link href='https://fonts.googleapis.com/css?family=Epilogue' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Proxima Nova' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="script.js"></script>
+	<link rel="icon" href="images/favicon.png">
+	<title>Startsida</title>
+</head>
+<body>
+
+	<nav class="menu">
+		<div class="name" style="cursor: pointer;" onclick="Redirect('index');">
+			<p>Jennifer Hörting</p>
+		</div>
+		<div clasS="icons">
+			<a href="mailto:jenniferlillemor@gmail.com" target="_blank">
+				<i class="fa fa-envelope" style="font-size: 24px;"></i>
+			</a>
+			<a href="https://www.linkedin.com/in/jenniferhrting/" target="_blank">
+				<i class="fa fa-linkedin-square" style="font-size: 24px;"></i>
+			</a>
+		</div>
+	</nav>
+
+	<div class="introduction">
+		<!-- <p>Hello there,</p> -->
+		<p class="introduction__title">
+			Hello there,
+		</p>
+		<p class="introduction__description">
+			I'm a graduate student at Umeå University pursuing an M.Sc. in Interaction Technology and Design.
+			I love working in the insection between humans and technology and making digital products more understandable, inclusive, and fun to use.
+			Currently, I'm at BookBeat where I'm conducing my Master Thesis.
+		</p>
+
+		<a href="Resume_Jennifer Hörting.pdf" download="GFG" target="_blank">
+			<button type="button">Download resume (PDF)</button>
+		</a>
+	</div>
+
+	<div class="work">
+
+		<div class="image" style="cursor: pointer;" onclick="Redirect('internship');">
+			<img class="image__img" src="images/Project-MIUN.png" alt="Bricks"/>
+			<div class="image__overlay">
+				<p class="image__title">
+					Discover nature
+				</p>
+				<p class="image__description">
+					Lowered thresholds to nature with the help of a mobile app
+				</p>
+			</div>
+		</div>
+
+		<div class="image" style="cursor: pointer;" onclick="Redirect('puma');">
+			<img class="image__img" src="images/Project-PUMA.png" alt="Bricks"/>
+			<div class="image__overlay">
+				<p class="image__title">
+					Drink generator
+				</p>
+				<p class="image__description">
+					Generate the ultimate beverage to buy at your Systembolag
+				</p>
+			</div>
+		</div>
+
+		<div class="image" style="cursor: pointer;" onclick="Redirect('puma');">
+			<img class="image__img" src="images/Project-DBT.png" alt="Bricks"/>
+			<div class="image__overlay">
+				<p class="image__title">
+					Title
+				</p>
+				<p class="image__description">
+					Description
+				</p>
+			</div>
+		</div>
+
+	</div>
+
+	<footer>
+		<p>Copyright © 2022 Jennifer Hörting.</p>
+	</footer>
+
+</body>
+</html>
