@@ -9,6 +9,8 @@ body {
 }
 a {
   text-decoration: none;
+  color: indianred;
+  font-weight: bold;
 }
 p {
   margin: 0px;
@@ -52,7 +54,7 @@ h3 {
   max-width: 900px;
   margin: 0 auto;
   text-align: left;
-  margin-top: 100px;
+  margin-top: 120px;
 }
 .introduction__title {
   font-size: 64px;
@@ -85,8 +87,14 @@ button {
 .contact {
   max-width: 900px;
   margin: 0 auto;
-  margin-top: 70px;
+  margin-top: 60px;
   /* background-color: thistle; */
+}
+.work__title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 100px;
+  margin-bottom: 20px;
 }
 .project__img {
   display: block;
@@ -118,9 +126,9 @@ footer {
   padding: 10px;
 }
 .image {
-  margin-top: 50px;
   position: relative;
   width: 100%;
+  margin-bottom: 30px;
 }
 .image__img {
   display: block;
@@ -158,8 +166,8 @@ footer {
 
 /* Smaller screens */
 @media (max-width: 768px) {
-  .back {
-    margin: 0;
+  body {
+    width: 95%;
   }
   .projectcardimage {
     width: 100%;
@@ -168,3 +176,4 @@ footer {
     width: 100%;
   }
 }
+
