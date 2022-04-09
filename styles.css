@@ -1,8 +1,9 @@
-@import url(https://fonts.googleapis.com/css2?family=Epilogue);
+@import url(https://fonts.googleapis.com/css2?family=Hind);
+
 
 html,
 body {
-  font-family: 'Epilogue', sans-serif;
+  font-family: 'Hind', sans-serif;
   width: 90%;
   margin: 0 auto;
 }
