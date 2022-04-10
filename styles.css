@@ -195,6 +195,9 @@ footer {
   li {
     font-size: 16px;
   }
+  .image__title {
+    font-size: 24px;
+  }
   .introduction__description {
     font-size: 18px;
   }
