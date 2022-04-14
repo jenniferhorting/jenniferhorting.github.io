@@ -103,6 +103,7 @@ button {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+  /* margin-bottom: 30px; */
 }
 .project__smallimg {
   margin-top: 30px;
@@ -111,7 +112,7 @@ button {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  /* max-width: 500px; */
+  max-width: 500px;
 }
 .back {
   cursor: pointer;
