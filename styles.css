@@ -31,7 +31,7 @@ h2 {
   font-weight: bold;
 }
 h1 {
-  font-size: 48px;
+  font-size: 40px;
 }
 h2 {
   font-size: 24px;
@@ -120,12 +120,6 @@ button {
   margin-right: auto;
   width: 100%;
   /* margin-bottom: 30px; */
-}
-.project__title {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 .project__smallimg {
   margin-top: 30px;
