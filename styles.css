@@ -1,10 +1,15 @@
-@import url(https://fonts.googleapis.com/css?family=Hind);
-
+@import url(https://fonts.googleapis.com/css?family=Inter);
+@import url(https://fonts.googleapis.com/css?family=Sora);
 
 html,
 body {
-  font-family: 'Hind', sans-serif;
+  font-family: 'Inter', sans-serif;
+  width: 100%;
+  margin: 0 auto;
+}
+.container {
   width: 90%;
+  max-width: 800px;
   margin: 0 auto;
 }
 a {
@@ -17,16 +22,16 @@ li {
   margin: 0px;
   margin-bottom: 20px;
   font-size: 18px;
-  line-height: 1.5;
+  line-height: 1.7;
 }
 h1,
 h2 {
-  margin: 0px;
-  margin-top: 20px;
+  margin-bottom: 15px;
+  margin-top: 40px;
   font-weight: bold;
 }
 h1 {
-  font-size: 40px;
+  font-size: 48px;
 }
 h2 {
   font-size: 24px;
@@ -38,14 +43,25 @@ h2 {
   margin-bottom: 8px;
 }
 .menu {
-  max-width: 900px;
+  width: 100%;
   padding-top: 30px;
-	font-size: 16px;
-	font-weight: bold;
+  margin: 0 auto;
+  z-index: 1;
+  background-color: white;
+  position: fixed;
+  top: 0;
+}
+.menu__content {
+  width: 90%;
   margin: 0 auto;
 }
 .menu .name {
   float: left;
+}
+.menu__name {
+  font-family: 'Sora';
+  font-size: 20px;
+  font-weight: bold;
 }
 .menu .icons {
   float: right;
@@ -57,7 +73,7 @@ h2 {
   max-width: 900px;
   margin: 0 auto;
   text-align: left;
-  margin-top: 120px;
+  margin-top: 150px;
 }
 .introduction__title {
   font-size: 64px;
@@ -88,7 +104,7 @@ button {
 .work,
 .project,
 .contact {
-  max-width: 900px;
+  /* max-width: 900px; */
   margin: 0 auto;
   margin-top: 60px;
 }
@@ -96,7 +112,7 @@ button {
   font-size: 24px;
   font-weight: bold;
   margin-top: 100px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 .project__img {
   display: block;
@@ -104,6 +120,12 @@ button {
   margin-right: auto;
   width: 100%;
   /* margin-bottom: 30px; */
+}
+.project__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .project__smallimg {
   margin-top: 30px;
@@ -169,8 +191,11 @@ footer {
 
 /* Smaller screens */
 @media (max-width: 768px) {
-  body {
+  /* body {
     width: 95%;
+  } */
+  .container {
+    width: 92%;
   }
   .projectcardimage {
     width: 100%;
@@ -182,8 +207,14 @@ footer {
 
 /* Phone screens */
 @media (max-width: 400px) {
-  body {
+  /* body {
     width: 99%;
+  } */
+  .container {
+    width: 92%;
+  }
+  .menu__name {
+    font-size: 16px;
   }
   h1 {
     font-size: 32px;

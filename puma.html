@@ -16,19 +16,21 @@
 
 <body>
 
-    <nav class="menu">
-		<div class="name" style="cursor: pointer;" onclick="Redirect('index');">
-			<p>Jennifer Hörting</p>
+    <div class="menu">
+		<div class="menu__content">
+			<div class="name" style="cursor: pointer;" onclick="Redirect('index');">
+				<p class="menu__name">Jennifer Hörting</p>
+			</div>
+			<div clasS="icons">
+				<a href="mailto:jenniferlillemor@gmail.com" target="_blank">
+					<i class="fa fa-envelope" style="font-size: 24px;"></i>
+				</a>
+				<a href="https://www.linkedin.com/in/jenniferhrting/" target="_blank">
+					<i class="fa fa-linkedin-square" style="font-size: 24px;"></i>
+				</a>
+			</div>
 		</div>
-		<div clasS="icons">
-			<a href="mailto:jenniferlillemor@gmail.com" target="_blank">
-				<i class="fa fa-envelope" style="font-size: 24px;"></i>
-			</a>
-			<a href="https://www.linkedin.com/in/jenniferhrting/" target="_blank">
-				<i class="fa fa-linkedin-square" style="font-size: 24px;"></i>
-			</a>
-		</div>
-	</nav>
+	</div>
 
     <!-- <div class="back" onclick="Redirect('index');">
         <span class="material-icons md-60">arrow_back</span>
@@ -36,11 +38,13 @@
     
     <div class="project">
 
+        <div class="container">
+
         <div class="project__image">
             <img class="project__img" src="images/Project-PUMA.png"/>
         </div>
 
-        <h1>Drink generator</h1>
+        <h1>Drink Generator</h1>
         <p clasS="subtitle">Generate the ultimate beverage to buy at your Systembolag</p>
 
         <p>Within a course at Umeå University, I developed a mobile app together with three other students. The idea was to create a new and fun way to discover beverages at Systembolaget, the monopoly distributor of alcoholic beverages in Sweden. Based on a couple of parameters, such as occasion, the mood of the user, and which beverages are in stock at Systembolaget, the app generated a beverage and suggested it to the user. An important part of the app was to use the API from Systembolaget.</p>
@@ -97,6 +101,7 @@
         <h2>What happened?</h2>
         <p>When going into the project, we were very eager to continue with the app after the end of the course and try to publish it on App Store and Google Play. Since it was no longer possible for us to provide the app with updated information, we were no longer motivated to continue working with the app after the course. Despite this, I think this project has been super fun to work with and I also learned a lot.</p>
 
+    </div>
     </div>
 
     <footer>
